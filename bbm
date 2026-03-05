@@ -1,0 +1,7 @@
+jarak = (float(input("Masukan jarak perjalanan(dalam satuan KM):")))
+harga = 13000
+harga_bensin = jarak/40
+harga_akhir = harga_bensin*harga
+print("Total jarak perjalanan:", jarak,"KM")
+print("Biaya bensin: Rp.", harga_akhir)
+
