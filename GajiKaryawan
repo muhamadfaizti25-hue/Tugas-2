@@ -1,0 +1,9 @@
+Gaji = float(input("Masukan Gaji Karyawan: "))
+Tunjangan = float(input("Masukan Tunjangan: "))
+Gaji_Kotor = Gaji + Tunjangan
+Potongan_BPJS = Gaji_Kotor*(2/100)
+Potongan_Pajak = Gaji_Kotor*(5/100)
+Gaji_Bersih = Gaji_Kotor-Potongan_BPJS-Potongan_Pajak
+
+print("Gaji Kotor: ", Gaji_Kotor)
+print("Gaji bersih: ", Gaji_Bersih)
