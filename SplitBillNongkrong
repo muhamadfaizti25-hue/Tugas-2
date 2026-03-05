@@ -1,0 +1,17 @@
+tagihan = float(input("Masukan total tagihan: "))
+jumlah_orang = int(input("masukan jumlah orang (contoh: ani + 3 teman =4): "))
+
+if jumlah_orang <= 0:
+    print("error: jumlah orang harus lebih dari 0!")
+elif tagihan < 0:
+    print("error: tagihan tidak boleh minus! ")
+else:
+    pajak = tagihan * 0.10
+    total_akhir = tagihan + pajak
+    bayar_per_orang = total_akhir / jumlah_orang
+
+    print("rincian pembayaran")
+    print("total tagihan awal: ", tagihan)
+    print("pajak (10%): ", pajak)
+    print("total setelah pajak: ", total_akhir)
+    print("masing-masing bayar: ", bayar_per_orang)         
