@@ -1,0 +1,14 @@
+import math
+harga_laptop = float(input("Masukkan Harga Laptop yang ingin dibeli: "))
+tabungan_per_bulan = float(input("Masukkan Alokasi Tabungan Tiap Bulan: "))
+
+if tabungan_per_bulan <= 0 :
+    print("error: tabungan per bulan harus lebih besar dari 0 agar laptop terbeli!")
+elif harga_laptop <= 0 :
+    print("error: harga laptop harus valid!")
+else :
+    jumlah_bulan = harga_laptop / tabungan_per_bulan
+    bulan_bulat = math.ceil(jumlah_bulan)
+
+    print(f"Untuk Membeli Laptop Seharga Rp {harga_laptop:,.0f},")
+    print(f"Kamu Butuh Menabung Selama {bulan_bulat} bulan.")
