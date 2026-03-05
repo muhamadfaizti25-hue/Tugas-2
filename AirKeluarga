@@ -1,0 +1,11 @@
+Jumlah_Jalmi = int(input("Lebetkeun jumlah jalmi: "))
+Hargi_Galon = 19000
+Kabutuhan_Cai_Per_Dinten = Jumlah_Jalmi * 2.5
+Kabutuhan_Cai_Per_Minggu = Kabutuhan_Cai_Per_Dinten * 7
+Jumlah_Galon = round( Kabutuhan_Cai_Per_Minggu / 19)
+Hargi_Galon_Per_Minggu = Jumlah_Galon * Hargi_Galon
+
+print("jumlah jalmi: ", Jumlah_Jalmi, "jalmi")
+print("kabutuhan cai per minggu: ", Kabutuhan_Cai_Per_Minggu, "liter")
+print("Jumlah galon nu kudu di peser: ", Jumlah_Galon, "siki")
+print("Acis nu kedah di alokasikeun: Rp.", Hargi_Galon_Per_Minggu)
